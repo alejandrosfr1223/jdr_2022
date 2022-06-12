@@ -1,13 +1,13 @@
 @extends('adminlte::page')
 
-@section('title', 'Lista de libros')
+@section('title', 'Lista de Perks')
 
 @section('content_header')
 
 @stop
 
 @section('content')
-    @livewire('admin.books-table')
+    @livewire('admin.perk-table')
 @stop
 
 @section('css')

@@ -2,11 +2,11 @@
 
 namespace App\Http\Livewire\Admin;
 
-use App\Models\Book;
+use App\Models\Perk;
 use Livewire\Component;
 use Livewire\WithPagination;
 
-class BooksTable extends Component
+class PerkTable extends Component
 {
     use WithPagination;
 
@@ -20,14 +20,12 @@ class BooksTable extends Component
 
     public function render()
     {
-        $books = Book::where('titulo','LIKE',"%$this->search%")
-            ->orWhere('autor','LIKE',"%$this->search%")
-            ->orWhere('editorial','LIKE',"%$this->search%")
-            ->orWhere('isbn','LIKE',"%$this->search%")
-            ->orWhere('notas','LIKE',"%$this->search%")
-            ->orderBy('updated_at','DESC')
+        $perks = Perk::where('perkname','LIKE',"%$this->search%")
+            ->orWhere('description','LIKE',"%$this->search%")
+            ->orWhere('price','LIKE',"%$this->search%")
+            ->orderByRaw('length(price),price')
             ->paginate($this->perPage);
-        return view('livewire.admin.books-table', compact('books'));
+        return view('livewire.admin.perks-table', compact('perks'));
     }
 
     public function clear(){

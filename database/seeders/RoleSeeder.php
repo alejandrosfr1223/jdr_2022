@@ -40,9 +40,9 @@ class RoleSeeder extends Seeder
         Permission::create(['name' => 'admin.crud.permissions.destroy'])->syncRoles($rolAdministrador);
 
         // Permisos CRUD books
-        Permission::create(['name' => 'admin.crud.books.index'])->syncRoles($rolAdministrador, $rolOperador);
-        Permission::create(['name' => 'admin.crud.books.create'])->syncRoles($rolAdministrador, $rolOperador);
-        Permission::create(['name' => 'admin.crud.books.edit'])->syncRoles($rolAdministrador, $rolOperador);
-        Permission::create(['name' => 'admin.crud.books.destroy'])->syncRoles($rolAdministrador);
+        Permission::create(['name' => 'admin.crud.perks.index'])->syncRoles($rolAdministrador, $rolOperador);
+        Permission::create(['name' => 'admin.crud.perks.create'])->syncRoles($rolAdministrador, $rolOperador);
+        Permission::create(['name' => 'admin.crud.perks.edit'])->syncRoles($rolAdministrador, $rolOperador);
+        Permission::create(['name' => 'admin.crud.perks.destroy'])->syncRoles($rolAdministrador);
     }
 }

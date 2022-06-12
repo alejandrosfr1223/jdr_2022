@@ -16,7 +16,7 @@ return [
 
     'title' => '',
     'title_prefix' => '',
-    'title_postfix' => '| FID',
+    'title_postfix' => '| JDR',
 
     /*
     |--------------------------------------------------------------------------
@@ -45,12 +45,12 @@ return [
     |
     */
 
-    'logo' => '<b>FID</b>',
+    'logo' => '<b>JDR</b>',
     'logo_img' => 'img/logos/logo-fid.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
-    'logo_img_alt' => 'FID',
+    'logo_img_alt' => 'JDR',
 
     /*
     |--------------------------------------------------------------------------
@@ -281,10 +281,10 @@ return [
         /* Administración de tablas */
         ['header' => 'ADMINISTRAR TABLAS'],
         [
-            'text' => 'Libros',
-            'url'  => 'admin/books',
-            'icon' => 'fas fa-fw fa-book',
-            'can'  => 'admin.crud.books.index',
+            'text' => 'Perks',
+            'url'  => 'admin/perks',
+            'icon' => 'fas fa-fw fa-user-tag',
+            'can'  => 'admin.crud.perks.index',
         ],
 
         /* Administración de la cuenta FID */

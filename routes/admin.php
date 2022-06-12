@@ -4,7 +4,7 @@ use App\Http\Controllers\admin\MaintenanceController;
 use App\Http\Controllers\admin\PermissionController;
 use App\Http\Controllers\admin\RoleController;
 use App\Http\Controllers\admin\UserController;
-use App\Http\Controllers\BookController;
+use App\Http\Controllers\PerkController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Spatie\Permission\Traits\HasRoles;
@@ -14,7 +14,7 @@ Route::get('/', function () {
         return view('admin.crud.users.index');
     }else{
         if(Auth::user()->hasRole('Operador')){
-            return view('admin.crud.books.index');
+            return view('admin.crud.perks.index');
         } else {
             return view('dashboard');
         }
@@ -52,8 +52,8 @@ Route::resource('roles', RoleController::class)->names('roles')
 Route::resource('permissions', PermissionController::class)->names('permissions')
 	->middleware('can:admin.crud.permissions.index');
 
-Route::resource('books', BookController::class)->names('books')
-    ->middleware('can:admin.crud.books.index');
+Route::resource('perks', PerkController::class)->names('perks')
+    ->middleware('can:admin.crud.perks.index');
 
 Route::get('test', function () {
     return view('admin.layouts.test');

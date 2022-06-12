@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Editar libro')
+@section('title', 'Editar perk')
 
 @section('content_header')
 
@@ -10,16 +10,16 @@
 <div class="p-4">
     <div class="card card-primary m-2">
         <div class="card-header m-4">
-            <h3 class="card-title">Editar libro</h3>
+            <h3 class="card-title">Editar perk</h3>
         </div>
-        <form action="{{ route('admin.books.update', $book) }}" method="POST">
+        <form action="{{ route('admin.perks.update', $perk) }}" method="POST">
             @csrf
             @method('put')
 
-            @include('admin.crud.books._form')
+            @include('admin.crud.perks._form')
 
             <div class="card-footer">
-                <button type="submit" class="btn btn-secondary">Actualizar libro</button>
+                <button type="submit" class="btn btn-secondary">Actualizar Perk</button>
             </div>
         </form>
     </div>
