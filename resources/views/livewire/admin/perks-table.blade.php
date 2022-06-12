@@ -3,7 +3,7 @@
         <div class="card">
             <div class="card-header">
                 <div class="row m-2">
-                    <h2 class="card-title flex-1"><strong>Lista de libros</strong></h2>
+                    <h2 class="card-title flex-1"><strong>Lista de Perks</strong></h2>
                     <div class="card-tools flex-1">
                         <div class="input-group input-group-sm">
                             <input wire:model="search" type="text" class="form-control float-right" placeholder="Buscar">
@@ -31,61 +31,51 @@
                     </div>
                 </div>
             </div>
-            @can('admin.crud.books.create')
-                <a href="{{ route('admin.books.create') }}" class="btn btn-secondary m-4">
-                    Añadir libro
+            @can('admin.crud.perks.create')
+                <a href="{{ route('admin.perks.create') }}" class="btn btn-secondary m-4">
+                    Añadir perk
                 </a>
             @endcan
 
             <div class="card-body table-responsive p-0">
-                @if ($books->count())
+                @if ($perks->count())
                 <table class="table table-hover text-nowrap">
                     <thead>
                         <tr>
-                            <th>Tapa</th> {{-- ID --}}
-                            <th>Titulo / Autor</th>
+                            <th>Nombre</th> {{-- ID --}}
+                            <th>Precio</th>
                             <th>Creado</th>
                             <th>Actualizado</th>
-                            @can('admin.crud.books.edit')
+                            @can('admin.crud.perks.edit')
                             <th class="text-center">Editar</th>
                             @endcan
-                            @can('admin.crud.books.destroy')
+                            @can('admin.crud.perks.destroy')
                             <th class="text-center">Eliminar</th>
                             @endcan
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($books as $book)
+                        @foreach ($perks as $perk)
                         <tr>
-                            <td title="{{ $book->id }}">
-                                <img
-                                    src="{{ $book->url_img_caratula }}"
-                                    onerror="this.onerror=null; this.src='/img/caratula.jpg'"
-                                    alt="{{ 'Caratula de ' . $book->titulo }}"
-                                    class="img-size-32 mr-2"
-                                >
-                            </td>
-                            <td>
-                                <p class="m-0">{{ $book->titulo }}</p>
-                                <small><strong>{{ $book->autor }}</strong></small>
-                            </td>
-                            <td>{{ $book->created_at }}</td>
-                            <td>{{ $book->updated_at }}</td>
-                            @can('admin.crud.books.edit')
+                            <td>{{ $perk->perkname }}</td>
+                            <td>{{ $perk->price }}</td>
+                            <td>{{ $perk->created_at }}</td>
+                            <td>{{ $perk->updated_at }}</td>
+                            @can('admin.crud.perks.edit')
                             <td class="text-center">
-                                <a href="{{ route('admin.books.edit', $book) }}" title="Editar"><i class="fas fa-edit"></i></a>
+                                <a href="{{ route('admin.perks.edit', $perk) }}" title="Editar"><i class="fas fa-edit"></i></a>
                             </td>
                             @endcan
-                            @can('admin.crud.books.destroy')
+                            @can('admin.crud.perks.destroy')
                             <td class="text-center">
-                                <form action="{{ route('admin.books.destroy', $book) }}" method="POST">
+                                <form action="{{ route('admin.perks.destroy', $perk) }}" method="POST">
                                     @csrf
                                     @method('delete')
                                     <button
                                         type="submit"
                                         title="Eliminar"
                                         style="color: red"
-                                        onclick="return confirm('¿Está seguro que desea eliminar a este libro?')"><i class="fas fa-trash"></i>
+                                        onclick="return confirm('¿Está seguro que desea eliminar a este perk?')"><i class="fas fa-trash"></i>
                                     </button>
                                 </form>
                             </td>
@@ -95,7 +85,7 @@
                     </tbody>
                 </table>
                 <div class="m-4">
-                    {{ $books->links() }}
+                    {{ $perks->links() }}
                 </div>
                 @else
                     <div class="m-4">

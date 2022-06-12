@@ -13,7 +13,7 @@
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fas fa-search fa-stack-1x fa-inverse"></i>
                                 </span>
-                                <h1 class="title_notmain">{{ trans("investigation.investigation") }}</h1>
+                                <h1 class="title_notmain">Perks</h1>
                             </div>
                         </td>
                     </tr>
@@ -39,38 +39,7 @@
                     </div>
                 </div>
             </div>
-            <div style="margin:auto; width:100%;">
-                <div id="sub_elementscont">
-                    <a  href="{{route('investigation.hist_unit')}}">
-                        <div class="cont_redirects">
-                            <span class="padicons members_index_icons fa-stack fa-2x">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fas fa-book fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <h3 class="bold">{{ trans("investigation.hist_unit") }}</h3>
-                        </div>
-                    </a>
-                    <a  href="{{route('investigation.jurid_unit')}}">
-                        <div class="cont_redirects">
-                            <span class="padicons members_index_icons fa-stack fa-2x">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fas fa-gavel fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <h3 class="bold">{{ trans("investigation.jurid_unit") }}</h3>
-                        </div>
-                    </a>
-                    <a  href="{{route('investigation.gen_unit')}}">
-                        <div class="cont_redirects">
-                            <span class="padicons members_index_icons fa-stack fa-2x">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-pagelines fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <h3 class="bold">{{ trans("investigation.gen_unit") }}</h3>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            
+
 
         </div>
     </div>
