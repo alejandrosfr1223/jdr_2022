@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FID</title>
+    <title>Juan del Rincón</title>
 
     <link rel="text/javascript" href="{{ URL::asset('/js/bootstrap.min.js') }}" />
 
@@ -61,7 +61,7 @@
       </li>
     </ul>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
@@ -71,37 +71,28 @@
             <li class="nav-item right-border">
               <a class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}" href="{{route('home')}}">{{ trans("mainlayout.home") }}</a>
             </li>
-            <li class="nav-item right-border">
-              <a class="nav-link {{ request()->routeIs('formation.*') ? 'active' : '' }}" href="{{route('formation.home')}}">{{ trans("mainlayout.formation") }}</a>
-            </li>
-            <li class="nav-item right-border">
-              <a class="nav-link {{ request()->routeIs('investigation.*') ? 'active' : '' }}" href="{{route('investigation.home')}}">{{ trans("mainlayout.investigation") }}</a>
-            </li>
-            <li class="nav-item right-border">
-              <a class="nav-link {{ request()->routeIs('documentation.*') ? 'active' : '' }}" href="{{route('documentation.home')}}">{{ trans("mainlayout.documentation") }}</a>
-            </li>
             @auth
                 @if (Auth::user()->roles->first() == [])
                     <li class="nav-item">
-                      <a class="nav-link {{ request()->routeIs('diffusion.*') ? 'active' : '' }}" href="{{route('diffusion.home')}}">{{ trans("mainlayout.diffussion") }}</a>
+                      <a class="nav-link {{ request()->routeIs('diffusion.*') ? 'active' : '' }}" href="{{route('perks.home')}}">Aportar</a>
                     </li>
                 @else
                     @if (Auth::user()->roles->first()->name == "Administrador" || Auth::user()->roles->first()->name == "Operador")
                         <li class="nav-item right-border">
-                          <a class="nav-link {{ request()->routeIs('diffusion.*') ? 'active' : '' }}" href="{{route('diffusion.home')}}">{{ trans("mainlayout.diffussion") }}</a>
+                          <a class="nav-link {{ request()->routeIs('diffusion.*') ? 'active' : '' }}" href="{{route('perks.home')}}">Aportar</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link {{ request()->routeIs('dashboard') ? 'active' : '' }}" href="/admin">{{ trans("mainlayout.dashboard") }}</a>
                         </li>
                     @else
                         <li class="nav-item">
-                          <a class="nav-link {{ request()->routeIs('diffusion.*') ? 'active' : '' }}" href="{{route('diffusion.home')}}">{{ trans("mainlayout.diffussion") }}</a>
+                          <a class="nav-link {{ request()->routeIs('diffusion.*') ? 'active' : '' }}" href="{{route('perks.home')}}">Aportar</a>
                         </li>
                     @endif
                 @endif
             @else
                 <li class="nav-item">
-                  <a class="nav-link {{ request()->routeIs('diffusion.*') ? 'active' : '' }}" href="{{route('diffusion.home')}}">{{ trans("mainlayout.diffussion") }}</a>
+                  <a class="nav-link {{ request()->routeIs('diffusion.*') ? 'active' : '' }}" href="{{route('perks.home')}}">Aportar</a>
                 </li>
             @endauth
             
@@ -124,11 +115,11 @@
                         <img class="footer_img" src="/img/logos/logo-fid-llave.png">
                     </td>
                     <td>
-                        <h1 class="footer_key">FID</h1>
+                        <h1 class="footer_key">Juan del Rincón</h1>
                     </td>
                 </tr>
             </table>
-
+            <br>
             <p style="font-weight: bold; color: white; font-size: 1.2rem; display: inline-block;">
               @choice('mainlayout.phonenumbers', 2):
             </p>
@@ -148,7 +139,7 @@
               {{ trans("mainlayout.mail") }}:
             </p>
             <p class="centeremojistext" style="font-weight: bold; color: white; font-size: 1.2rem; display: flex; margin:10px 0;">
-              {!! Emoji::toImage(':email:') !!} FID@sefaruniversal.com
+              {!! Emoji::toImage(':email:') !!} jdr@sefaruniversal.com
             </p>
             
             <br>
@@ -166,7 +157,7 @@
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="brand fab fa-facebook fa-stack-1x"></i>
               </span>
-              <a href="#" style="margin-top: 10rem; color: #CCA766 !important; text-decoration: underline;">{{ trans("mainlayout.meetfid") }}</a>
+              <a href="#" style="margin-top: 10rem; color: #CCA766 !important; text-decoration: underline;">Conoce más</a>
             </p>
           </div>
 
