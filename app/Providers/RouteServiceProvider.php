@@ -42,29 +42,9 @@ class RouteServiceProvider extends ServiceProvider
                 ->group(base_path('routes/admin.php'));
 
             Route::middleware('web')
-                ->name('formation.')
-                ->prefix('formation')
-                ->group(base_path('routes/formation.php'));
-
-            Route::middleware('web')
-                ->name('investigation.')
-                ->prefix('investigation')
-                ->group(base_path('routes/investigation.php'));
-
-            Route::middleware('web')
-                ->name('documentation.')
-                ->prefix('documentation')
-                ->group(base_path('routes/documentation.php'));
-
-            Route::middleware('web')
-                ->name('diffusion.')
-                ->prefix('diffusion')
-                ->group(base_path('routes/diffusion.php'));
-
-            Route::middleware('web')
-                ->name('divinapastora.')
-                ->prefix('divinapastora')
-                ->group(base_path('routes/divinapastora.php'));
+                ->name('perks.')
+                ->prefix('perks')
+                ->group(base_path('routes/perks.php'));
         });
     }
 
