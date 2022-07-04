@@ -10,7 +10,7 @@
                         <table id="main" style="text-align: center; align-content: center; margin: auto; ">
                             <tr>
                                 <td>
-                                    <img class="first_img" src="img/logos/logo-fid-llave.png">
+                                    <img class="first_img" src="{{ asset('/img/logos/logo-fid-llave.png') }}">
                                 </td>
                             </tr>
                             <tr>
@@ -23,7 +23,7 @@
                         <table id="notmain" style="text-align: center; align-content: center; margin: auto;">
                             <tr>
                                 <td>
-                                    <img class="first_img" src="img/logos/logo-fid-llave.png">
+                                    <img class="first_img" src="{{ asset('/img/logos/logo-fid-llave.png') }}">
                                 </td>
                                 <td>
                                     <h1 class="first_key">Juan Del Rincón</h1>
@@ -43,7 +43,7 @@
 
         <div class="home_container" id="whitebg">
             <div style="position: relative;">
-                <img src="/img/home/logo-overlay2r.png" class="backg-ovrl2 bigscreen ol2-r">
+                <img src="{{ asset('/img/home/logo-overlay2r.png') }}" class="backg-ovrl2 bigscreen ol2-r">
                 <div id='departments_cont'>
                     
                     <div class="leftdivide" id="dep_info_cnt">

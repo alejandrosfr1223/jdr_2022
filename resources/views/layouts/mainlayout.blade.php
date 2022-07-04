@@ -9,6 +9,7 @@
     <link rel="text/javascript" href="{{ URL::asset('/js/bootstrap.min.js') }}" />
 
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet" type="text/css" >
+    <link href="{{ asset('/css/imgdeclare.css') }}" rel="stylesheet" type="text/css" >
     <link href="{{ asset('/css/stylesapp.css') }}" rel="stylesheet" type="text/css" >
 
     <script type="text/javascript" src="{{ asset('/js/app.js') }}"></script>
@@ -45,10 +46,10 @@
             <table style="margin-top:20px;">
                 <tr>
                     <td>
-                        <img src="/img/logos/logo-fid-llave.png" style="margin-right: 10px; width: 5rem;">
+                        <img src="{{ asset('/img/logos/logo-fid-llave.png') }}" style="margin-right: 10px; width: 5rem;">
                     </td>
                     <td>
-                        <h1 style="margin: auto; font-weight:bold; padding-left: 10px; color:#606060; font-size: 5rem; border-left: 1px #606060 solid;">JDR</h1>
+                        <h1 style="margin: auto; font-weight:bold; padding-left: 10px; color:#606060; font-size: 2.5rem; border-left: 1px #606060 solid;">Juan Del Rincón</h1>
                     </td>
                 </tr>
             </table>
@@ -82,7 +83,7 @@
                           <a class="nav-link {{ request()->routeIs('diffusion.*') ? 'active' : '' }}" href="{{route('perks.home')}}">Aportar</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link {{ request()->routeIs('dashboard') ? 'active' : '' }}" href="/admin">{{ trans("mainlayout.dashboard") }}</a>
+                          <a class="nav-link {{ request()->routeIs('dashboard') ? 'active' : '' }}" href="jdr/admin">{{ trans("mainlayout.dashboard") }}</a>
                         </li>
                     @else
                         <li class="nav-item">
@@ -112,7 +113,7 @@
             <table id="footerlogo">
                 <tr>
                     <td>
-                        <img class="footer_img" src="/img/logos/logo-fid-llave.png">
+                        <img class="footer_img" src="{{ asset('/img/logos/logo-fid-llave.png') }}">
                     </td>
                     <td>
                         <h1 class="footer_key">Juan del Rincón</h1>
