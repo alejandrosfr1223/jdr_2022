@@ -49,7 +49,7 @@
                         <img class="changecolorpngsyellow" src="{{ asset('/img/logos/jdr.png') }}" style="margin-right: 10px; width: 5rem;">
                     </td>
                     <td>
-                        <h1 style="margin: auto; font-weight:bold; padding-left: 10px; color:#606060; font-size: 2.5rem; border-left: 1px #606060 solid;">Divina Pastora de Almas</h1>
+                        <h1 style="margin: auto; font-weight:bold; padding-left: 10px; color:#606060; font-size: 2.5rem; border-left: 1px #606060 solid;">Juan del Rincón</h1>
                     </td>
                 </tr>
             </table>
