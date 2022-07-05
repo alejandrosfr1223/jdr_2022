@@ -45,6 +45,21 @@ class RouteServiceProvider extends ServiceProvider
                 ->name('perks.')
                 ->prefix('perks')
                 ->group(base_path('routes/perks.php'));
+
+            Route::middleware('web')
+                ->name('agenealogico.')
+                ->prefix('agenealogico')
+                ->group(base_path('routes/agenealogico.php'));
+            
+            Route::middleware('web')
+                ->name('descendencia.')
+                ->prefix('descendencia')
+                ->group(base_path('routes/descendencia.php'));
+            
+            Route::middleware('web')
+                ->name('materiales.')
+                ->prefix('materiales')
+                ->group(base_path('routes/materiales.php'));
         });
     }
 

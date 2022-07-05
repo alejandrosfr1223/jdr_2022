@@ -13,7 +13,7 @@
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fas fa-search fa-stack-1x fa-inverse"></i>
                                 </span>
-                                <h1 class="title_notmain">Perks</h1>
+                                <h1 class="title_notmain">Arbol Genealógico</h1>
                             </div>
                         </td>
                     </tr>
@@ -34,7 +34,7 @@
                     <div style="width: 100%; padding: 20px;">
                         <center>
                             <img class="imglogo_subpage" src="{{ asset('/img/logos/onebranch.png') }}" class="svgcolor" style="transform: rotate(270deg);" />
-                            <h2>Perks</h2>
+                            <h2>Arbol Genealógico</h2>
                         </center>
                     </div>
                 </div>
