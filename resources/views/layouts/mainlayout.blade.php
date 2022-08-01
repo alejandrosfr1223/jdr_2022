@@ -84,7 +84,7 @@
             @auth
                 @if (Auth::user()->roles->first() == [])
                     <li class="nav-item">
-                      <a class="nav-link {{ request()->routeIs('diffusion.*') ? 'active' : '' }}" href="{{route('perks.home')}}">Aportar</a>
+                      <a class="nav-link {{ request()->routeIs('perks.*') ? 'active' : '' }}" href="{{route('perks.home')}}">Aportar</a>
                     </li>
                 @else
                     @if (Auth::user()->roles->first()->name == "Administrador" || Auth::user()->roles->first()->name == "Operador")
@@ -124,7 +124,7 @@
             <table id="footerlogo">
                 <tr>
                     <td>
-                        <img class="footer_img changecolorpngsyellow" src="{{ asset('/img/logo/jdr.png') }}">
+                        <img class="footer_img changecolorpngsyellow" src="{{ asset('/img/logos/jdr.png') }}">
                     </td>
                     <td>
                         <h1 class="footer_key">Juan del Rincón</h1>

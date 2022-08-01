@@ -57,29 +57,12 @@
         <div class="bluebg" style="position: relative;">
             <div id="containermv2">
                 <div id="photo_bg_dp2">
-                    <img src="{{ asset('/img/fisidorobg.png') }}" >
+                    <img class="changecolorpngsyellow" src="{{ asset('/img/logos/jdr.png') }}" >
                 </div>
                 <div class="textinfofisidoro tex">
                     <p class="textisidoro textpresente">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="home_container notmain">
-            <div class="row gx-0">
-                <div class="col-6 col-md-3 contimgdivpast">
-                    <img src="{{ asset('/img/divinapastora/IMG_3691.JPG') }}" class="img-fluid imgsdivpast">
-                </div>
-                <div class="col-6 col-md-3 contimgdivpast">
-                    <img src="{{ asset('/img/divinapastora/20220513_105735.jpg') }}" class="img-fluid imgsdivpast">
-                </div>
-                <div class="col-6 col-md-3 contimgdivpast">
-                    <img src="{{ asset('/img/divinapastora/20220513_100126.jpg') }}" class="img-fluid imgsdivpast">
-                </div>
-                <div class="col-6 col-md-3 contimgdivpast">
-                    <img src="{{ asset('/img/divinapastora/20220513_102017.jpg') }}" class="img-fluid imgsdivpast">
                 </div>
             </div>
         </div>
@@ -95,7 +78,7 @@
                     <h2>Árbol Genealógico</h2>
                 </a>
                 <a href="{{ route('descendencia.home') }}" class="dp_cont">
-                    <h2>Descendencia en América</h2>
+                    <h2>Descendencia</h2>
                 </a>
             </div>
         </div>
