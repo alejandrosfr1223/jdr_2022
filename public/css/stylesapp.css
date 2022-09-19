@@ -447,9 +447,9 @@ footer {
 
 .mv_cont {
     padding: 0;
-    width: 50%;
+    width: 35%;
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
 .imgsdivpast{
@@ -465,12 +465,24 @@ footer {
 
 .tex {
     width:85%; 
-    padding: 4rem 9rem 4rem 3rem;
+    padding: 4rem 3rem;
     margin:auto;
 }
 
 .mv_cont p {
     padding: 3rem 2rem 3rem 9rem;
+    color: #12313a !important;
+    font-size: 1.25rem;
+}
+
+.cont_welc_jdr  {
+    padding: 2rem 0rem 2rem 6rem;
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cont_welc_jdr p {
     color: #12313a !important;
     font-size: 1.25rem;
 }
@@ -785,7 +797,20 @@ footer {
     width: 70px;
 }
 
+.changedirection{
+    display: flex;
+}
+
+.textcontainers{
+    padding: 0px 5rem;
+}
 @media screen and (max-width: 990px) {
+    .changedirection{
+        flex-direction: column-reverse;
+    }
+    .textcontainers{
+        padding: 0px;
+    }
     #photo_bg_dp2{
         width: 100%;
     }
@@ -802,6 +827,7 @@ footer {
         width:100%;
         padding: 1.5rem;
         text-align: center;
+        display: block;
     }
     .mv_cont p {
         padding: 0.5rem;
