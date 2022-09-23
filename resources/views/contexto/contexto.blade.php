@@ -13,7 +13,7 @@
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fas fa-search fa-stack-1x fa-inverse"></i>
                                 </span>
-                                <h1 class="title_notmain">Arbol Genealógico</h1>
+                                <h1 class="title_notmain">Contexto</h1>
                             </div>
                         </td>
                     </tr>
@@ -21,20 +21,17 @@
             </div>
         </div>
         <div class="home_container notmain" id="whitebg">
-
-
             <div id='departments_cont'>
                 <div class="leftdivide" id="dep_info_cnt">
-                    
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    La situación en los reinos de España a partir de 1492 va a cambiar por dos aspectos fundamentales, la expulsión de los judíos y el descubrimiento del Nuevo Mundo. Muchos de los que optaron por la conversión van a ver que continúan siendo perseguidos, tanto por la Inquisición como por los cristianos viejos. Ello los mueve a embarcarse en grandes empresas, porque no tienen nada que perder.
                     </p>
                 </div>
                 <div class="rightdivide" id="logo_subpage">
                     <div style="width: 100%; padding: 20px;">
                         <center>
-                            <img class="imglogo_subpage" src="{{ asset('/img/logos/onebranch.png') }}" class="svgcolor" style="transform: rotate(270deg);" />
-                            <h2>Arbol Genealógico</h2>
+                            <img class="imglogo_subpage changecolorpngsyellow" src="{{ asset('/img/logos/jdr.png') }}" />
+                            <h2>Contexto</h2>
                         </center>
                     </div>
                 </div>

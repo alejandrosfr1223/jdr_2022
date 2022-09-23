@@ -106,14 +106,17 @@
             <img src="{{ asset('/img/home/logo-overlay2.png') }}" class="backg-ovrl3 bigscreen ol2-l">
             <img src="{{ asset('/img/logos/vector-logo.svg') }}" class="backg-ovrl3 smallscreen">
             <div id="div_past_pestanas2">
-                <a href="{{ route('materiales.home') }}" style="margin: auto;" class="dp_cont">
-                    <h2>Materiales Compilados</h2>
+                <a href="{{ route('contexto.home') }}" style="margin: auto;" class="dp_cont">
+                    <h2>Contexto histórico</h2>
                 </a>
-                <a href="{{ route('agenealogico.home') }}" style="margin: auto;" class="dp_cont">
-                    <h2>Árbol Genealógico</h2>
+                <a href="{{ route('territorio.home') }}" style="margin: auto;" class="dp_cont">
+                    <h2>El territorio</h2>
                 </a>
-                <a href="{{ route('descendencia.home') }}" style="margin: auto;" class="dp_cont">
-                    <h2>Descendencia</h2>
+                <a href="{{ route('familia.home') }}" style="margin: auto;" class="dp_cont">
+                    <h2>La familia</h2>
+                </a>
+                <a href="{{ route('fuentes.home') }}" style="margin: auto;" class="dp_cont">
+                    <h2>Fuentes documentales y bibliográficas</h2>
                 </a>
             </div>
         </div>

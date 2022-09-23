@@ -13,7 +13,7 @@
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fas fa-search fa-stack-1x fa-inverse"></i>
                                 </span>
-                                <h1 class="title_notmain">Materiales</h1>
+                                <h1 class="title_notmain">Fuentes documentales y bibliográficas</h1>
                             </div>
                         </td>
                     </tr>
@@ -27,14 +27,14 @@
                 <div class="leftdivide" id="dep_info_cnt">
                     
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Las fuentes son las que nos ayudan a comprender los hechos históricos. Sin los documentos y los libros que interpretan los datos obtenidos de ellos, no hay Historia. Pretendemos compilar aquí todos los libros y documentos que hagan referencia a Juan del Rincón.
                     </p>
                 </div>
                 <div class="rightdivide" id="logo_subpage">
                     <div style="width: 100%; padding: 20px;">
                         <center>
-                            <img class="imglogo_subpage" src="{{ asset('/img/logos/onebranch.png') }}" class="svgcolor" style="transform: rotate(270deg);" />
-                            <h2>Materiales</h2>
+                        <img class="imglogo_subpage changecolorpngsyellow" src="{{ asset('/img/logos/jdr.png') }}" />
+                        <h2>Fuentes documentales y bibliográficas</h2>
                         </center>
                     </div>
                 </div>

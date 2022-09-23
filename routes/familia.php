@@ -3,5 +3,5 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('descendencia.descendencia');
+    return view('familia.familia');
 })->name("home");

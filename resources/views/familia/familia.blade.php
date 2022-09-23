@@ -13,7 +13,7 @@
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fas fa-search fa-stack-1x fa-inverse"></i>
                                 </span>
-                                <h1 class="title_notmain">Descendencia en América</h1>
+                                <h1 class="title_notmain">La Familia</h1>
                             </div>
                         </td>
                     </tr>
@@ -21,17 +21,20 @@
             </div>
         </div>
         <div class="home_container notmain" id="whitebg">
+
+
             <div id='departments_cont'>
                 <div class="leftdivide" id="dep_info_cnt">
+                    
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Analizaremos los diferentes lazos familiares que se van urdiendo a través del tiempo en sus dos vertientes, la ascendente y la descendente. De esta manera podremos avanzar en la búsqueda y el descubrimiento del antepasado sefardí de Juan del Rincón y poner en comunicación a las distintas ramas de sus descendientes en territorio americano.
                     </p>
                 </div>
                 <div class="rightdivide" id="logo_subpage">
                     <div style="width: 100%; padding: 20px;">
                         <center>
-                            <img class="imglogo_subpage" src="{{ asset('/img/logos/onebranch.png') }}" class="svgcolor" style="transform: rotate(270deg);" />
-                            <h2>Descendencia en América</h2>
+                        <img class="imglogo_subpage changecolorpngsyellow" src="{{ asset('/img/logos/jdr.png') }}" />
+                        <h2>La Familia</h2>
                         </center>
                     </div>
                 </div>

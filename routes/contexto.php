@@ -3,5 +3,5 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('materiales.materiales');
+    return view('contexto.contexto');
 })->name("home");

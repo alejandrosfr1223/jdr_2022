@@ -47,19 +47,24 @@ class RouteServiceProvider extends ServiceProvider
                 ->group(base_path('routes/perks.php'));
 
             Route::middleware('web')
-                ->name('agenealogico.')
-                ->prefix('agenealogico')
-                ->group(base_path('routes/agenealogico.php'));
+                ->name('territorio.')
+                ->prefix('territorio')
+                ->group(base_path('routes/territorio.php'));
             
             Route::middleware('web')
-                ->name('descendencia.')
-                ->prefix('descendencia')
-                ->group(base_path('routes/descendencia.php'));
+                ->name('familia.')
+                ->prefix('familia')
+                ->group(base_path('routes/familia.php'));
             
             Route::middleware('web')
-                ->name('materiales.')
-                ->prefix('materiales')
-                ->group(base_path('routes/materiales.php'));
+                ->name('fuentes.')
+                ->prefix('fuentes')
+                ->group(base_path('routes/fuentes.php'));
+                
+            Route::middleware('web')
+                ->name('contexto.')
+                ->prefix('contexto')
+                ->group(base_path('routes/contexto.php'));
         });
     }
 
